@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(document).on('keypress', function (e) {
         if (e.which = 13) {
-            let url = ``;
+            let url = `https://apithree-delta.vercel.app/api/news`;
 
             async function mynews() {
                 let responce = await fetch(url);
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     $("h2").click(async function (e) {
         e.preventDefault();
-        let url = ``;
+        let url = `https://apithree-delta.vercel.app/api/news`;
 
         async function mynews() {
             let responce = await fetch(url);
